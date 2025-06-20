@@ -4,7 +4,7 @@ class Courty extends Component {
     render() {
         return (
             <div>
-                HELLO
+                HELLO {this.props.name}
             </div>
         );
     }
