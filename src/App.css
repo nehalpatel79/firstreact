@@ -12,6 +12,9 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+#id{
+  
+}
 
 .App-header {
   background-color: #282c34;
@@ -23,9 +26,25 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.password{
+   margin: 50px auto;
+  /* padding-left: 50px;  */
+}
+label{
+  font-weight: 500;
+  font-size: 18px;
+}
+.aaa{
+   margin:10px auto;
+  padding-left: 50px;
+ 
+}
 .App-link {
   color: #61dafb;
+}
+.next{
+  margin: 10px 10px 0 0;
+  padding-left: 10px;
 }
 
 @keyframes App-logo-spin {

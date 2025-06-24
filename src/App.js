@@ -7,13 +7,31 @@ import Props from "./Container/Props/Props";
 import Countufun from "./Container/Countyfun/Countufun";
 import Cityfun from "./Container/Cityfun/Cityfun";
 import Password from "./Container/Password/Password";
+import { useState } from "react";
+import Incrementdec from "./Container/Incrementdec/Incrementdec";
+import Next from "./Next/Next";
 
 function App() {
-  const a = 25
+  const a = 25;
+
+  const [theme, setTheme] = useState("LIGHT");
+
+  const themStyle = {
+    backgroundColor: theme === "LIGHT" ? "white" : "black",
+    colour: theme === "LIGHT" ? "black" : "white",
+  };
+  const themclick = () => {
+    setTheme(theme === "LIGHT" ? "dark" : "LIGHT");
+  };
 
   return (
-    <div>
-      <Password/>
+    <div className="aaa" style={themStyle}>
+      <button onClick={() => themclick()}>
+        {theme === "LIGHT" ? <i class="fa-solid fa-moon"></i>  :  <i class="fa-solid fa-sun"></i>}
+      </button>
+      <Next/>
+      {/* <Password /> */}
+      {/* <Incrementdec/> */}
       {/* <Countufun/>
       <Cityfun/>
       <Courty name="India"/>

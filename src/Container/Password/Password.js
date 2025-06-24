@@ -2,19 +2,17 @@ import React, { useState } from 'react'
 
 function Password() {
 
-    const [password,setPassword] =  useState("");
-    const [showpassword, setShowpassword] =useState(false)
+    const [show,setShow] =useState (false)
 
-   const handleclick =()=>{
-    
-    setShowpassword(!showpassword)
-   }
+    const handerclick =() => {
+      setShow(!show)
+    }
 
   return (
-    <div>
+    <div className='password'>
         <label>Password : </label>
-        <input type={showpassword ? "text": "password"} id='password'></input>
-        <button  onClick={()=> handleclick()}>{showpassword ? "show": "hide"}</button>
+       <input placeholder='Enter Password' type={show ? "text" : "password"}></input>
+       <button onClick={() => handerclick()}>{show ? <i class="fa-solid fa-eye"></i>:<i class="fa-solid fa-eye-slash"></i>}</button>
     </div>
   )
 }
