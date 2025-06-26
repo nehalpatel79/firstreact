@@ -12,6 +12,7 @@ import Incrementdec from "./Container/Incrementdec/Incrementdec";
 import Next from "./Next/Next";
 import Add from "./Next/Add";
 import Preclass from "./Next/Preclass";
+import Lifecycle from "./Container/Life-cycle/Lifecycle";
 
 function App() {
   const a = 25;
@@ -31,8 +32,9 @@ function App() {
       <button onClick={() => themclick()}>
         {theme === "LIGHT" ? <i class="fa-solid fa-moon"></i>  :  <i class="fa-solid fa-sun"></i>}
       </button>
-      <Next/>
-      <Preclass/>
+      {/* <Next/> */}
+      {/* <Preclass/> */}
+      <Lifecycle/>
       
       {/* <Add/> */}
       
