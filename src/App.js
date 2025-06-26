@@ -10,6 +10,8 @@ import Password from "./Container/Password/Password";
 import { useState } from "react";
 import Incrementdec from "./Container/Incrementdec/Incrementdec";
 import Next from "./Next/Next";
+import Add from "./Next/Add";
+import Preclass from "./Next/Preclass";
 
 function App() {
   const a = 25;
@@ -30,9 +32,13 @@ function App() {
         {theme === "LIGHT" ? <i class="fa-solid fa-moon"></i>  :  <i class="fa-solid fa-sun"></i>}
       </button>
       <Next/>
-      {/* <Password /> */}
-      {/* <Incrementdec/> */}
-      {/* <Countufun/>
+      <Preclass/>
+      
+      {/* <Add/> */}
+      
+      {/* <Password />
+      <Incrementdec/>
+      <Countufun/>
       <Cityfun/>
       <Courty name="India"/>
       <City/>
