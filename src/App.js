@@ -9,10 +9,14 @@ import Cityfun from "./Container/Cityfun/Cityfun";
 import Password from "./Container/Password/Password";
 import { useState } from "react";
 import Incrementdec from "./Container/Incrementdec/Incrementdec";
-import Next from "./Next/Next";
-import Add from "./Next/Add";
-import Preclass from "./Next/Preclass";
+import Next from "./Container/Next/Next";
+import Add from "./Container/Next/Add";
+import Preclass from "./Container/Next/Preclass";
 import Lifecycle from "./Container/Life-cycle/Lifecycle";
+import Timerfun from "./Container/Life-cycle/Timerfun";
+import ProductTable from "./Container/ProductTable/ProductTable";
+import Product from "./Container/ProductTable/Product";
+import { Container } from "react-bootstrap";
 
 function App() {
   const a = 25;
@@ -29,15 +33,22 @@ function App() {
 
   return (
     <div className="aaa" style={themStyle}>
-      <button onClick={() => themclick()}>
-        {theme === "LIGHT" ? <i class="fa-solid fa-moon"></i>  :  <i class="fa-solid fa-sun"></i>}
-      </button>
+      <Container>
+      {/* <button onClick={() => themclick()}>
+        {theme === "LIGHT" ? (
+          <i class="fa-solid fa-moon"></i>
+        ) : (
+          <i class="fa-solid fa-sun"></i>
+        )}
+      </button> */}
       {/* <Next/> */}
       {/* <Preclass/> */}
-      <Lifecycle/>
-      
+      {/* <Lifecycle/> */}
+      {/* <Timerfun/>       */}
       {/* <Add/> */}
-      
+      {/* <ProductTable /> */}
+      <Product/>
+
       {/* <Password />
       <Incrementdec/>
       <Countufun/>
@@ -46,6 +57,7 @@ function App() {
       <City/>
       <State />
       <Props a={a}/> */}
+      </Container>
     </div>
   );
 }

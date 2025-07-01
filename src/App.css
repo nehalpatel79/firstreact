@@ -12,10 +12,13 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-#id{
-  
+.name{
+  font-weight: 500;
+  padding-right: 5px;
 }
-
+.row{
+  row-gap: 25px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -45,6 +48,38 @@ label{
 .next{
   margin: 10px 10px 0 0;
   padding-left: 10px;
+}
+#search{
+  width: 20%;
+  margin-right: 25px;
+}
+header{
+  display: flex;
+}
+#short{
+  margin-left:20px;
+}
+.page{
+  display: flex;
+  justify-content: center;
+}
+
+/* .data{
+  height: 100%;
+  width: 100%;
+   border: 1px solid black;  */
+ /* padding:  20px 0px 0px 6px; */
+  /* margin: 5px; */
+/* } */
+.card-img-top{
+  width: 200px !important;
+  height: 200px;
+  margin: 15px auto;
+ /* padding: 20px 0px 0px 80px; */
+ text-align: center;
+}
+span{
+  font-weight: 800;
 }
 
 @keyframes App-logo-spin {
